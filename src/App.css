@@ -1,0 +1,1002 @@
+/* Hide the Audio Player */
+/* Circular Music Button */
+.music-button {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fa787a;
+  color: white;
+  border: none;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.music-button:hover {
+  background-color: #fa3e9f;
+  transform: scale(1.1);
+}
+
+/* Adjust for AboutHer Page */
+#about .music-button {
+  top: 140px; /* Adjust based on Navbar height */
+}
+
+#relationship .music-button {
+  top: 140px; /* Adjust based on Navbar height */
+}
+
+
+#firsts .music-button {
+  top: 140px; /* Adjust based on Navbar height */
+}
+
+#things-i-call-her .music-button {
+  top: 140px; /* Adjust based on Navbar height */
+}
+
+#things-she-calls-me .music-button {
+  top: 140px; /* Adjust based on Navbar height */
+}
+
+#things-she-likes .music-button {
+  top: 140px; /* Adjust based on Navbar height */
+}
+
+#things-she-dislikes .music-button {
+  top: 140px; /* Adjust based on Navbar height */
+}
+
+#things-i-love-about-her .music-button {
+  top: 140px; /* Adjust based on Navbar height */
+}
+
+#things-only-i-know .music-button {
+  top: 140px; /* Adjust based on Navbar height */
+}
+
+#promises .music-button {
+  top: 140px; /* Adjust based on Navbar height */
+}
+
+#photo-gallery .music-button {
+  top: 140px; /* Adjust based on Navbar height */
+}
+
+#proposal .music-button {
+  top: 140px; /* Adjust based on Navbar height */
+}
+
+/* Navbar Styles */
+nav {
+  position: relative;
+  background-color: #ffcccb; /* Light pink background */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ff69b4; /* Hot pink on hover */
+  color: white;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Home Page Styles */
+#home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(255, 182, 193, 0.8), rgba(255, 192, 203, 0.8)), url('/public/assets/hero-bg.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 2s ease-in-out;
+}
+/*home page ends here*/
+
+
+/* AboutHer Section */
+#about {
+  padding: 60px 20px;
+  background: linear-gradient(rgba(255, 182, 193, 0.8), rgba(255, 192, 203, 0.8)), url('/public/assets/download2.png') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about h2 {
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* About Content Container */
+.about-content {
+  display: flex;
+  font-family: 'sans-serif';
+  font-style: bold;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: linear-gradient(rgba(247, 191, 200, 0.8), rgba(255, 192, 203, 0.8)), url('/public/assets/avatar.jpg') no-repeat center 20%/cover;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Avatar Circle */
+.avatar {
+  width: 200px;
+  height: 200px;
+  background-color: #ff69b4; /* Pink background for avatar */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 5px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Details Section */
+.details {
+  text-align: left;
+  color: #080707; /* Dark text for readability */
+
+}
+
+.details p {
+  font-size: 18px;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.details strong {
+  color: #f51384; /* Pink for strong text */
+}
+
+
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .details p {
+    font-size: 16px;
+  }
+}
+
+
+
+/* Animation for Hero Text */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*relationship*/
+
+#relationship {
+  padding: 60px 20px;
+  background: linear-gradient(rgba(255, 182, 193, 0.8), rgba(255, 192, 203, 0.8)), url('/public/assets/download2.png') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#relationship h2 {
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Timeline Container */
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(254, 204, 204, 0.9); /* Semi-transparent white background */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Event Cards */
+.event {
+  background: linear-gradient(rgba(255, 182, 193, 0.8), rgba(255, 192, 203, 0.8)), url('/public/assets/download1.png') no-repeat center center/cover;
+  padding: 20px;
+  font-family: 'serif', serif;
+  font-weight: lighter;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  color: #333; /* Dark text for readability */
+}
+
+.event p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.event p:first-child {
+  margin-top: 0;
+}
+
+.event p:last-child {
+  margin-bottom: 0;
+}
+
+/*firsts*/
+
+#firsts {
+  padding: 60px 20px;
+  background: linear-gradient(rgba(255, 182, 193, 0.8), rgba(255, 192, 203, 0.8)), url('/public/assets/download3.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#firsts h2 {
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Firsts Grid Container */
+.firsts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* First Item Cards */
+.first-item {
+  background-color: rgba(255, 178, 203, 0.9); /* Semi-transparent white background */
+  padding: 20px;
+  font-family: 'serif',cursive;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #333; /* Dark text for readability */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.first-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.first-item p {
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.6;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .firsts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .first-item p {
+    font-size: 16px;
+  }
+}
+
+/*things i call her*/
+
+#things-i-call-her {
+  padding: 60px 20px;
+  background: linear-gradient(rgba(255, 182, 193, 0.8), rgba(255, 192, 203, 0.8)), url('/public/assets/download4.jpg') no-repeat center 30% /cover;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+
+#things-i-call-her h2 {
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Call List Container */
+.call-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(248, 193, 193, 0.9); /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Call List Items */
+.call-list p {
+  font-size: 24px;
+  font-family: 'Dancing Script', cursive; /* Stylish cursive font */
+  color: #333; /* Dark text for readability */
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #f988c0; /* Pink background for each item */
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.call-list p:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+ 
+/*things she calls me*/
+
+#things-she-calls-me {
+  padding: 60px 20px;
+  background: linear-gradient(rgba(255, 182, 193, 0.8), rgba(255, 192, 203, 0.8)), url('/public/assets/download5.jpg') no-repeat center 22%/cover;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#things-she-calls-me h2 {
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/*things she likes*/
+
+#things-she-likes {
+  padding: 60px 20px;
+  background: linear-gradient(rgba(255, 182, 193, 0.8), rgba(255, 192, 203, 0.8)), url('/public/assets/download7.jpg') no-repeat center 37%/cover;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#things-she-likes h2 {
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: rgb(249, 241, 245);
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Likes List Container */
+.likes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f2b4ba;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Likes List Items */
+.likes-list p {
+  font-size: 20px;
+  font-family: 'sans-serif', cursive; /* Modern and clean font */
+  font-style: bold;
+  color: #333; /* Dark text for readability */
+  margin: 10px;
+  padding: 15px 20px;
+  background-color: #ff69b4; /* Pink background for each item */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.likes-list p:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*things she dislikes*/
+
+#things-she-dislikes {
+  padding: 60px 20px;
+  background: linear-gradient(rgba(255, 182, 193, 0.8), rgba(255, 192, 203, 0.8)), url('/public/assets/download0.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#things-she-dislikes h2 {
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Dislikes List Container */
+.dislikes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(247, 194, 194, 0.9); /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Dislikes List Items */
+.dislikes-list p {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+  color: #333; /* Dark text for readability */
+  margin: 10px;
+  padding: 15px 20px;
+  background-color: #ff69b4; /* Pink background for each item */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dislikes-list p:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*things i love about her*/
+
+#things-i-love-about-her {
+  padding: 60px 20px;
+  background: linear-gradient(rgba(255, 182, 193, 0.8), rgba(255, 192, 203, 0.8)), url('/public/assets/download01.jpg') no-repeat center 13%/cover;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#things-i-love-about-her h2 {
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Love List Container */
+.love-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(252, 200, 200, 0.9); /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Love List Items */
+.love-list p {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+  color: #333; /* Dark text for readability */
+  margin: 10px;
+  padding: 15px 20px;
+  background-color: #ff69b4; /* Pink background for each item */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.love-list p:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Things only I know*/
+
+
+#things-only-i-know {
+  padding: 60px 20px;
+  background: linear-gradient(rgba(255, 182, 193, 0.8), rgba(255, 192, 203, 0.8)), url('/public/assets/download02.png') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#things-only-i-know h2 {
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Body List Container */
+.body-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(244, 193, 193, 0.9); /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Body List Items */
+.body-list p {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+  color: #333; /* Dark text for readability */
+  margin: 10px;
+  padding: 15px 20px;
+  background-color: #ff69b4; /* Pink background for each item */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .body-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .body-list p {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}
+
+/*promises*/
+
+#promises {
+  padding: 60px 20px;
+  background: linear-gradient(rgba(255, 182, 193, 0.8), rgba(255, 192, 203, 0.8)), url('/public/assets/download03.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#promises h2 {
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Promises List Container */
+#promises ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(250, 210, 210, 0.9); /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Promises List Items */
+#promises ul li {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+  color: #333; /* Dark text for readability */
+  margin: 15px 0;
+  padding: 10px 20px;
+  background-color: #ff69b4; /* Pink background for each item */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#promises ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  #promises ul {
+    padding: 20px;
+  }
+
+  #promises ul li {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+/*photo gallery*/
+
+#photo-gallery {
+  padding: 60px 20px;
+  background: linear-gradient(rgba(255, 182, 193, 0.8), rgba(255, 192, 203, 0.8)), url('/public/assets/download9.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#photo-gallery h2 {
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Gallery Container */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Photo Item */
+.photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Caption */
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo:hover .caption {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .caption {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+/*proposal*/
+
+#proposal {
+  padding: 60px 20px;
+  background: linear-gradient(rgba(255, 182, 193, 0.8), rgba(255, 192, 203, 0.8)), url('/public/assets/download3.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#proposal h1 {
+  font-size: 36px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  margin: 10px 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+#proposal h2 {
+  font-size: 48px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  margin: 20px 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Proposal Buttons */
+.proposal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.proposal-buttons button {
+  padding: 15px 30px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.proposal-buttons button:first-child {
+  background-color: #4CAF50; /* Green for "Yes" */
+}
+
+.proposal-buttons button:last-child {
+  background-color: #FF69B4; /* Pink for "Ofc, stupid" */
+}
+
+.proposal-buttons button:hover {
+  transform: scale(1.1);
+}
+
+/* Response Text */
+#response {
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin-top: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 1s ease-in-out;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  #proposal h1 {
+    font-size: 28px;
+  }
+
+  #proposal h2 {
+    font-size: 36px;
+  }
+
+  .proposal-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .proposal-buttons button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  #response {
+    font-size: 20px;
+  }
+}
